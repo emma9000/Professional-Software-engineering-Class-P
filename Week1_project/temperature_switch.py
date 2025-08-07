@@ -1,7 +1,7 @@
 import numpy as np
 
 arrayNum=np.array([18.5, 19, 20, 25.0, 2, 30, 13.9])
-def temperatureSwitch(num):
+def temperature_switch(num):
     result=0.0
     if num==1:
         average=np.mean(arrayNum)
@@ -28,7 +28,7 @@ def indetifyTemperature():
 if __name__=="__main__":
     # Determine and display the highest and lowest recorded temperatures.
     num=int(input("Please input a int num: 1:average,2:highest,3:lowest : "))
-    ans= temperatureSwitch(num)
+    ans= temperature_switch(num)
     if(ans==0.0):
         print("You inputed a wrong number, please choose one number between 1,2,3")
     else:
