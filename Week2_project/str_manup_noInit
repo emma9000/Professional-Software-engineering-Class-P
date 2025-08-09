@@ -1,6 +1,10 @@
 
 class stringManupulator:
 
+# The __init__ method is used to initialize the object's attributes when an instance is created.
+# It helps to set up the initial state of the object in a clean and organized way, 
+# making the code more readable and reducing the chance of errors.
+
     def find_character(char,text):
         return text.find(char)
 
@@ -27,3 +31,4 @@ if __name__=="__main__":
     stringManupulator.string_lenth(text)
     stringManupulator.string_toupper(text)
     
+
