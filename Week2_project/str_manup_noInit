@@ -1,0 +1,29 @@
+
+class stringManupulator:
+
+    def find_character(char,text):
+        return text.find(char)
+
+    def string_lenth(text):
+        lenth= len(text)
+        print(f"the input lenth is：{lenth}")
+
+    def string_toupper(text):
+        upper_string= str.upper(text)
+        print(f"the input upper style is {upper_string}")
+
+
+if __name__=="__main__":
+
+    text="example"
+
+    result= stringManupulator.find_character('x',text)
+    print(result)
+
+    #input_word=input("Please input a word:")
+    #text=input_word
+
+    
+    stringManupulator.string_lenth(text)
+    stringManupulator.string_toupper(text)
+    
