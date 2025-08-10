@@ -15,6 +15,7 @@ class stringManupulator:
     def string_toupper(text):
         upper_string= str.upper(text)
         print(f"the input upper style is {upper_string}")
+        
 
 
 if __name__=="__main__":

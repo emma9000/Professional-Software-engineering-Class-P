@@ -14,6 +14,12 @@ class stringManupulator:
         upper_string= str.upper(self.text)
         print(f"the input upper style is {upper_string}")
 
+    def get_word_count(self,input_sentence):
+        word_list=input_sentence.split(' ')
+        count_word=len(word_list)
+        print(f"input and find the number of words:{count_word}")
+        
+
 
 if __name__=="__main__":
 
@@ -22,10 +28,14 @@ if __name__=="__main__":
     result= string_object.find_character('x')
     print(result)
 
-    #input_word=input("Please input a word:")
+    #
     #text=input_word
 
     
     string_object.string_lenth()
     string_object.string_toupper()
+
+    input_words=input("Please input a sentence:")
+    string_object.get_word_count(input_words)
+
     
