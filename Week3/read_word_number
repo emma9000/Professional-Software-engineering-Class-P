@@ -6,7 +6,10 @@ def file_read(file_path):
         infile=f.read()
         return infile
     
-
+def replace_punctuation(context):
+    for p in string.punctuation:
+        context=context.replace('',p)
+    return context
 
 if __name__=="__main__":
     # check path exist
@@ -15,11 +18,13 @@ if __name__=="__main__":
     if(os.path.exists(file_path)):
         
         context= file_read(file_path) 
-        translator=str.maketrans("","",string.punctuation) # erase all the punctuation replace by space
-        clear_context=context.translate(translator)
-        print(clear_context)
+        #for p in string.punctuation:
+        #    context=context.replace(p,'')
+        translator=str.maketrans("","",string.punctuation) # erase all the punctuation
+        context=context.translate(translator)
+        print(context)
 
-        wordlist=clear_context.split()
+        wordlist=context.split()
         number=len(wordlist)
         print(f"The context total number is {number}!")
 
