@@ -15,5 +15,12 @@ def create_table():
         )
     ''')
     
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS Students (
+            Stu_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            Stu_Name TEXT NOT NULL,
+            Stu_Address TEXT
+        )
+    ''')    
     conn.commit()
     conn.close()

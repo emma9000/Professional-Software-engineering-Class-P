@@ -1,5 +1,6 @@
 from database import create_table
 from user_manager import add_user, view_users, search_user, delete_user
+from student_manager import add_student,view_students
 
 def menu():
     print("\n==== User Manager ====")
@@ -11,6 +12,11 @@ def menu():
 
 def main():
     create_table()
+
+    # 2. add students
+    add_student("Emma","19B Arawa ST")
+    add_student("Tony","19A Arawa ST")
+
     while True:
         menu()
         choice = input("Select an option (1-5): ")
@@ -35,6 +41,13 @@ def main():
             break
         else:
             print("Invalid choice, try again.")
+    
+    # 3. display all rows from both the Users and Students tables
+    students= view_students()
+    users= view_users()
+    print(students)
+    print(users)
+    
 
 if __name__ == "__main__":
     main()
