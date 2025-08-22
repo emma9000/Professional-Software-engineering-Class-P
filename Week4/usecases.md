@@ -17,4 +17,4 @@
    6. Arrange Course Schedule
    7. upload your material
 
-   ![alt text](image.png)
+   ![alt text](image-1.png)
