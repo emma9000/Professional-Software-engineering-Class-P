@@ -3,9 +3,9 @@ class User:
 
     def __init__(self,name,address,age,ID):
         self.name=name
-        self.address
-        self.age
-        self.ID
+        self.address=address
+        self.age=age
+        self.ID=ID
 
 class Academics(User):
         
@@ -28,7 +28,7 @@ class Student(Academics):
         self.acadamic_record=acadamic_record
         self.student_code=student_code
     
-class Teacher(Staff)
+class Teacher(Staff):
 
     def __init__(self,title,courseid,pay_rate,office,name,address,age,ID):
         super().__init__(pay_rate,office,name,address,age,ID)
