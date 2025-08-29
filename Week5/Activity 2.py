@@ -27,6 +27,9 @@ class Student(Academics):
         super().__init__(tax_code,salary,name,address,age,ID)
         self.acadamic_record=acadamic_record
         self.student_code=student_code
+
+    def great(self):
+        print(f"Hi, I'm new in YB College, my name is {self.name}")
     
 class Teacher(Staff):
 
@@ -34,3 +37,10 @@ class Teacher(Staff):
         super().__init__(pay_rate,office,name,address,age,ID)
         self.title=title
         self.courseid=courseid
+    def great(self):
+        print(f"Hi, I'm your teacher {self.name}")
+
+student= Student("A123","B234","",0,"Emma","New Lynn",18,1)
+student.great()
+teacher= Teacher("Professor",1,10,"lecture office","Emily","YB college location",30,1)
+teacher.great()
