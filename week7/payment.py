@@ -22,6 +22,11 @@ class CreditcardPayment(PaymentStrategy):
         print(f"Processing ${amount:.2f} through Credit Card.")
 
 class PaymentFactory:
+    _processors = {
+        "paypal": PaypalPayment,
+        "stripe": StripePayment,
+        "creditcard": CreditcardPayment
+    }
 
     @staticmethod
     def get_payment_method(method: str) -> PaymentStrategy:
