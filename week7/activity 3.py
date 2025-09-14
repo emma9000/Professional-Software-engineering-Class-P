@@ -31,7 +31,7 @@ class PaymentFactory:
     }
 
     @classmethod
-    def get_payment_method(cls, method: str) -> PaymentStrategy:
+    def get_payment_method(cls, method: str)-> PaymentStrategy:
         processor_class = cls._processors.get(method.lower())
         if not processor_class:
             raise ValueError(f"Unknown payment method: {method}")
