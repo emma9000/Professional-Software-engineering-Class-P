@@ -18,12 +18,12 @@ class TextAnalyser:
     # determine the upper words count.
     def count_upper_words(self) -> int:
         '''Count the number of uppercase words in the text.'''
-        sum=1
+        total=0
         for i in self.text:
             if i.isupper():
-                sum+=1
+                total+=1
 
-        return sum
+        return total
     
     def analyze(self):
         '''Perform a comprehensive analysis of the text.'''
