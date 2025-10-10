@@ -1,5 +1,4 @@
 from db import create_connection
-import sqlite3
 
 def add_cost(amount, description):
     conn = create_connection()
