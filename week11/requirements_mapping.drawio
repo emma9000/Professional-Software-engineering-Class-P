@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2025-10-12T00:00:00.000Z" agent="Mozilla/5.0" version="24.7.8" type="device">
+  <diagram id="mapping" name="Requirements Mapping">
+    <mxGraphModel dx="1188" dy="748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Titles -->
+        <mxCell id="title1" value="Functional Requirements" style="text;whiteSpace=wrap;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="40" width="300" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="title2" value="Non-Functional Requirements" style="text;whiteSpace=wrap;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="880" y="40" width="320" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Functional items -->
+        <mxCell id="F1" value="F1: User Login" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="340" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="F2" value="F2: Upload Dataset" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="100" y="180" width="340" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="F3" value="F3: Generate Report" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="100" y="260" width="340" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Non-Functional items -->
+        <mxCell id="N1" value="N1: Performance (≤2s)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" vertex="1" parent="1">
+          <mxGeometry x="860" y="100" width="360" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="N2" value="N2: Security (OAuth2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" vertex="1" parent="1">
+          <mxGeometry x="860" y="180" width="360" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="N3" value="N3: Usability (WCAG AA)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" vertex="1" parent="1">
+          <mxGeometry x="860" y="260" width="360" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Example connectors (editable) -->
+        <mxCell id="F1_to_N2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block" edge="1" parent="1" source="F1" target="N2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="F2_to_N1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block" edge="1" parent="1" source="F2" target="N1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="F3_to_N3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block" edge="1" parent="1" source="F3" target="N3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

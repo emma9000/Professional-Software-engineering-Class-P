@@ -1,0 +1,129 @@
+Week 11 - Activity 5: Validation and Verification
+
+
+Project Title: IntelliTranscribe - Real-Time Voice Transcription, and Summarization Platform
+Group Name: Group H
+Team Members:
+- Xin Xu
+- Liyanage Dinasha Perera
+
+
+- PASSED = Implemented and verified by run/demo or test
+- Implemented = Requirement has been Implemented
+- Not Yet Implemented = Requirement is coding
+
+Functional Requirement:
+
+FR1 — User Registration & Authentication
+Users can register, log in, and reset passwords using email and password. System uses JWT for authentication. — Implemented
+
+FR2 — User Data Isolation
+Each user can only view and manage their own lectures and data. — Implemented
+
+FR3 — Lecture Creation
+Users can create new lectures with unique titles. Each lecture is assigned a unique lecture_id. — Implemented
+
+FR4 — Lecture Management
+Users can view, list, and delete their lectures. — Implemented
+
+FR5 — Lecture Details
+Each lecture displays transcript, searched words, and summary sections. — Implemented
+
+FR6 — Microphone Permission & Error Handling
+The system requests microphone access before recording and shows clear error messages if permission is denied. — Implemented
+
+FR7 — Real-Time Transcription
+Converts live English audio to text in real time, streaming results to the UI. — Implemented
+
+FR8 — Whisper Integration
+Transcription is powered by open-source tools (e.g., OpenAI Whisper). — Implemented
+
+FR9 — Long Session Support
+The system supports continuous sessions of up to 2+ hours. — Implemented
+
+FR10 — Transcript Storage
+Transcript data is automatically saved to the database when the user stops recording. — Implemented
+
+FR11 — Dictionary Panel (UI)
+A collapsible dictionary panel (~25% screen width) can be toggled on/off. — Implemented
+
+FR12 — Word Search & Display
+Users can search English words using a free dictionary API and view phonetics and definitions. — Implemented
+
+FR13 — Word Data Storage
+All searched words and meanings are saved in the database, linked to specific lecture and student IDs. — Implemented
+
+FR14 — Summary Section Access
+The “Summarize” button/section appears in the right panel and is enabled only after transcription stops. — Not Yet Implemented
+
+FR15 — AI-Generated Summary
+The system generates a summary for each lecture using an AI model. — Not Yet Implemented
+
+FR16 — Summary Display & Storage
+Generated summaries are displayed in the UI and stored in the database. — Not Yet Implemented
+
+FR17 — PDF Export
+Users can download lecture data as a PDF file. — Not Yet Implemented
+
+FR18 — PDF Content Composition
+The exported PDF includes transcript text, searched words, definitions, summaries, and lecture metadata. — Not Yet Implemented
+
+FR19 — Data Relations & Integrity
+All transcripts, words, and summaries are linked through lecture_id and user_id for data consistency. — Implemented
+
+FR20 — Cross-Browser Compatibility & User Feedback
+The system provides clear feedback messages and is compatible with major browsers (Chrome, Firefox, Safari, Edge). — Implemented
+    
+
+Non-Functional Requirement:
+
+NFR1 — All API requests use JWT authentication —— Implemented
+
+NFR2 — Passwords hashed using bcrypt —— Implemented
+
+NFR3 — Input validation and sanitization —— Implemented
+
+NFR4 — Python 3.11+ backend —— Implemented
+
+NFR5 — Clear error messages with retry options —— Implemented
+
+NFR6 — Data isolation per user —— Implemented
+
+NFR7 — SQL injection prevention via parameterized queries —— Implemented
+
+NFR8 — Compatible with PostgreSQL 12+ —— Implemented
+
+NFR9 — Database connection pooling between 5–20 connections —— Implemented
+
+NFR10 — Works on Chrome, Firefox, Safari, Edge —— Implemented
+
+NFR11 — Supports Web Audio API —— Implemented
+
+NFR12 — Real-time transcription latency < 10s —— Implemented
+
+NFR13 — Uses free/open-source tools including Whisper —— Implemented
+
+NFR14 — Transcription accuracy ≥ 85% —— Implemented
+
+NFR15 — System processes audio chunks every 3s —— Implemented
+
+NFR16 — Supports WebSocket protocol —— Implemented
+
+NFR17 — Chunked transcript processing for long (2h+) lectures —— Implemented
+
+NFR18 — Transcripts saved incrementally in chunks —— Implemented
+
+NFR19 — Efficient resource usage（CPU/Memory/Storage）—— Implemented
+
+NFR20 — Intuitive UI with visual feedback —— Implemented
+
+NFR21 — Dictionary lookup completes within ≤5s —— Implemented
+
+NFR22 — Free dictionary API integration —— Implemented
+
+NFR23 — Handles network interruptions gracefully —— Not Yet Implemented
+
+NFR24 — Summary generation completes within ≤30s —— Not Yet Implemented
+
+NFR25 — Page load time under 3s —— Not Yet Implemented
+    
