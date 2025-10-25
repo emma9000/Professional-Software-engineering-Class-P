@@ -1,0 +1,23 @@
+How many (days): 1
+Where is the destination (city name): auckland
+Enter your age: 20
+List some of your positive traits (comma-separated): hiking,nature,sea,food
+List some of your negative traits (comma-separated): not city
+What is your fitness goal? (e.g., lose weight, build muscle, endurance, etc.): healthy,clean air
+
+ My Name is Hadi as AI Itinerary expert:
+Sure, given your interests and preferences, here's a recommended itinerary for your day in Auckland city:
+
+**Morning**
+
+**1. Rangitoto Island**
+   *Address: Auckland Harbour, Auckland, New Zealand*
+
+Start your morning with a ferry ride to Rangitoto Island, Auckland's youngest and largest volcanic island, offering fresh air and breathtaking natural beauty. You can head to the summit of the volcano via a walking track, which provides panoramic views of Auckland city and the Hauraki Gulf.
+
+**Late Morning to Afternoon**
+
+**2. Waiheke Island**
+   *Address: Auckland Harbour, Auckland, New Zealand*
+
+From Rangitoto, take a ferry to Waiheke Island. This island is famous for its vineyards and olive groves. You can enjoy a winery tour and a delightful lunch at one of the vineyard restaurants, offering fresh local food with stunning sea views. You can also explore some beautiful walking tracks on the island  
